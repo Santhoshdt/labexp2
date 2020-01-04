@@ -16,13 +16,12 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+public class AddTwoIntegers {
+    public static void main(String[] args) {
+        
+        int first = 10;
+        int second = 20;
+        int sum = first + second;
+        System.out.println("The sum is: " + sum);
+    }
+}'
